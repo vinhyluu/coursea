@@ -1,0 +1,325 @@
+.blackTop{
+    background: #1c1c1c;
+    border-bottom: 1px solid #3d3d3f;
+    .iconSearchContainer{
+        justify-content: space-between;
+        padding: 5px 0 15px 0; 
+        .squareIcon{
+        margin-right: 20px;
+        }
+    }
+}
+
+.iconSearchContainer, .courseaSquareIcon{
+    display: flex;
+}
+
+input.searchForm{
+    background: #3d3d3f;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px 50px 5px 55px;
+    font-size: 1.5rem;
+    font-family: $openSans;
+}
+
+.searchBar .fa{
+    font-size: 1rem;
+}
+.fa-search{
+    color: white;
+    position: relative;
+    left: 40px;
+    bottom: 1px;
+    padding: 11px 10px 10px 0;
+    border-right: 1px solid #1c1c1c;
+}
+
+.wrapper2.mainNav{
+    background: #1c1c1c;
+    .mainNavContainer{
+        display: flex; 
+        justify-content: space-between;      
+            .navLeft .angleDown1{
+                margin-left: 10px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+.toggleMe{
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+
+.navLeft ul, .navRight ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+                       
+.navLeft ul li, .navRight ul li{
+    color: $darkGrey;
+    font-family: $openSans;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 15px 0 15px 0;
+}
+
+.navLeft ul li a, .navRight ul li a{
+    text-decoration: none;
+    color: $darkGrey;
+}
+
+.navLeft ul li{
+    margin-right: 40px;
+}
+
+.navRight ul li{
+    padding-left: 40px;
+}
+
+.headerBackground{
+    background-image: linear-gradient(0deg, rgba(37, 30, 30, 0.51)),url(../images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    .headerContentContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 150px 50px 150px 0;
+        width: 50%;
+        .headerContentTitle h1{
+            @include headerText(4.8rem);
+            font-weight: 200;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+}
+
+.headerContentParagraph p{
+    @include headerText(1.7rem);
+    line-height: 1.8;
+}
+
+.headerArrowLeft{
+    color: white;
+    padding-left: 40px;
+}
+
+.headerArrowRight{
+    color: white;
+    padding-right: 40px;
+}
+
+.headerArrowLeft::before, .headerArrowRight::before{
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLine{
+    border-bottom: 1px solid darkgrey;
+    opacity: 0.4;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+
+// Media Queries
+@media only screen and (max-width : 1647px){
+    .headerBackground .headerContentContainer{
+    width: 60%;
+    }
+}
+
+@media only screen and (max-width : 1375px){
+    .headerBackground .headerContentContainer{
+    width: 65%;
+    }
+}
+
+@media only screen and (max-width : 1269px){
+    .headerBackground .headerContentContainer{
+    width: 70%;
+    }
+}
+
+@media only screen and (max-width : 1180px){
+    .headerBackground .headerContentContainer{
+    width: 75%;
+    }
+}
+
+@media only screen and (max-width : 1138px){
+    .toggleMe{
+        display: inline-block;
+    }
+
+    #toggle{
+	    display: none;
+    }
+
+    #toggle:checked + .nav{
+        right: 0;
+    }
+
+    label[for="toggle"]{
+        position: absolute;
+        top: 70px;
+        left: 13%;
+        color: grey;
+        font-size: 1.8rem;
+    }
+
+    .nav{
+        background: black;
+        color: white;
+        position: fixed;
+        width: 590px;
+        right: -600px;
+        top: 0;
+        bottom: 0;
+        transition: all 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+        transform: skewX(-15deg) translateX(30%);
+    }
+
+    .nav li{
+        border-bottom: 1px solid red;
+        width: 100%;
+    }
+
+    .navLeft ul li{
+        padding: 20px 0 0 30px;
+        margin: 0;
+        font-size: 2.5rem;
+        transform: skewX(15deg);
+    }
+
+    .navLeft ul{
+        justify-content: center;
+        padding-bottom: 170px;
+        padding-right: 100px;
+    }
+}
+@media only screen and (max-width : 1103px){
+    .headerBackground .headerContentContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 1035px){
+    .headerBackground .headerContentContainer{
+        width: 100%;
+        text-align: center;
+    }
+    .headerLine{
+        width: 100%;
+    }
+    .nav{
+        width: 605px;
+        right: -610px;
+    }
+}
+
+@media only screen and (max-width : 831px){
+    .headerBackground .headerContentContainer{
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width : 635px){
+    input.searchForm{
+        padding: 5px 0px 5px 55px;
+    }
+}
+
+@media only screen and (max-width : 568px){
+    .iconSearchContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchBar{
+        margin-top: 15px;
+    }
+
+    label[for="toggle"]{
+        top: 118px;
+    }
+
+    input.searchForm{
+        padding: 5px 60px 5px 55px;
+    }
+}
+
+@media only screen and (max-width : 515px){
+    .headerBackground .headerContentContainer .headerContentTitle h1{
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width : 483px){
+    .nav{
+        width: 413px;
+    }
+}
+
+@media only screen and (max-width : 430px){
+    .wrapper .headerContentContainer{
+        padding: 100px 0 100px 0;
+    }
+
+    .headerBackground .headerContentContainer .headerContentTitle h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width : 423px){
+    input.searchForm{
+        padding: 5px 45px 5px 50px;
+    }
+}
+
+@media only screen and (max-width : 375px){
+    input.searchForm{
+        padding: 5px 40px 5px 50px;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 375px){
+    input.searchForm{
+        padding: 5px 0px 5px 40px;
+    }
+
+    .headerArrowLeft{
+        padding-left: 5px;
+    }
+
+    .headerArrowRight{
+        padding-right: 10px;
+    }
+
+    .nav{
+        width: 360px;
+    }
+}

@@ -1,0 +1,51 @@
+.sectionHeadingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .sectionTitles h2{
+        font-family: $raleWay;
+        text-transform: uppercase;
+        font-size: 4.8rem;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+.sectionParagraph p{
+    @include sectionParagraph(1.7rem);
+    padding: 0 310px 0 310px;
+}
+
+//Media Queries
+@media only screen and (max-width : 1539px){
+    .sectionParagraph p{
+        padding: 0 280px 0 280px;
+    }
+}
+
+@media only screen and (max-width : 1394px){
+    .sectionParagraph p{
+        padding: 0 200px 0 200px;
+    }
+}
+
+@media only screen and (max-width : 1202px){
+    .sectionParagraph p{
+        padding: 0 130px 0 130px;
+    }
+}
+
+@media only screen and (max-width : 1124px){
+    .sectionParagraph p{
+        padding: 0 100px 0 100px;
+    }
+}
+
+@media only screen and (max-width : 914px){
+    .sectionParagraph p{
+        padding: 0 50px 0 50px;
+    }
+}
+

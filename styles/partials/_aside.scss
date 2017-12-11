@@ -1,0 +1,95 @@
+.lora{
+    @include asideTextTitle($color8);
+}
+
+.julie{
+    @include asideTextTitle($color9);
+}
+
+.maria{
+    @include asideTextTitle($color10);
+}
+
+.sam{
+    @include asideTextTitle($color11);
+}
+
+.asideContent h4{
+    font-family: $raleWay;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #9d9c9c;
+    margin: 0;
+}
+
+.asideContent p{
+    font-family: $raleWay;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.asideGalleryContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.asideRowContainer{
+    width: 48.5%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.asideKristen{
+    border: 3px dotted $color8;
+}
+
+.asideSimon{
+    border: 3px dotted $color9;
+}
+
+.asideRyan{
+    border: 3px dotted $color10;
+}
+
+.asideSylvia{
+    border: 3px dotted $color11;
+}
+
+.asideRowImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    flex-grow: 1;
+}
+
+.asideRowContentContainer{
+    flex-shrink: 5;
+}
+
+.asideContent{
+    padding: 0 30px;
+}
+
+// Media Queries
+
+@media only screen and (max-width : 1052px){
+    .asideRowContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .asideGalleryContainer.wrapper{
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 697px){
+    aside .sectionParagraph p{
+        padding: 0;
+    }
+}

@@ -1,0 +1,196 @@
+// 1st green section
+
+.sectionGreen1, .searchForCoursesContainer{
+    background: #59dac3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchForCoursesInputs{
+    display: flex;
+}
+
+.sectionGreen1Title h3{
+    @include sectionGreenTitles(3rem, 700);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.13);
+    margin: 0;
+}
+
+.sectionGreen1Title h3:nth-child(2){
+    padding-top: 5px;
+}
+
+.courseaText{
+    @include sectionGreenTitles(3rem, 300);
+    text-transform: uppercase;
+}
+
+.sectionGreen1Subscribe h3{
+    @include sectionGreenTitles(1.8rem, 400);
+    text-transform: uppercase;
+    display: table;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 10px 50px 10px 50px;
+}
+
+.sectionGreen1Subscribe{
+    margin-top: 20px;
+}
+
+.sectionGreen1Subscribe a{
+    text-decoration: none;
+}
+
+.sectionGreen1Subscribe a:visited{
+    color: white;
+}
+
+
+//2nd green section
+.searchForCourses h3{
+    @include sectionGreenTitles(4.8rem, 700)
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.13);
+    margin: 0;
+}
+
+.searchForCoursesContent p{
+    @include sectionGreenTitles(2.2rem, 400);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.13);
+    position: relative;
+    padding-top: 30px;
+}
+
+.searchForCoursesContent p:before{
+    content:"";
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    border-bottom: 1px solid #fffefe;
+    width: 100px;
+}
+
+// Green section drop downs
+.greenInput1, .greenInput2, .searchForm2{
+    border: none;
+    border-radius: 4px;
+    background: white;
+}
+
+.greenInput1{
+    padding: 10px 150px 10px 15px;
+}
+
+.greenInput2{
+    padding: 10px 50px 10px 15px;
+}
+
+select, .searchForm2{
+    appearance: none;
+    color: #909090;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.searchForm2::placeholder{
+    color: #909090;
+}
+
+.angleDown2, .angleDown3{
+    color: #55ceb8;
+    position: relative;
+    border-left: 1px solid #59dac3;
+}
+
+.angleDown2, .angleDown3{
+    right: 34px;
+    padding: 10px 0px 11px 0px;
+}
+
+.angleDown2:before, .angleDown3:before{
+    font-size: 1.6rem;
+    padding-left: 10px;
+}
+
+.searchForm2{
+    padding: 10px 0px 11px 0px;
+    text-indent: 15px;
+}
+
+.greenSearch{
+    padding: 7px 30px 7px 30px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+// Media Queries
+@media only screen and (max-width : 809px){
+    .searchForCoursesInputs{
+        flex-wrap: wrap;
+        width: 38%;
+    }
+
+    .input1, .greenInput1, .input2, .greenInput2, .input3, .searchForm2, .input4 {
+        width: 100%;
+    }
+    .greenInput1{
+        padding-right: 0;
+    }
+    .searchForm2{
+        margin-bottom: 25px;
+    }
+    .input4{
+        display: flex;
+        justify-content: center;
+    }
+    button.greenSearch{
+        margin: 0;
+   }
+}
+
+@media only screen and (max-width : 617px){
+    .sectionGreen1Title h3:nth-child(1){
+        padding: 0 70px 10px 70px;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .searchForCoursesInputs{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width : 375px) and (max-width : 460px){
+    .sectionGreen1Title h3:nth-child(1) {
+    padding: 0 0px 10px 0px;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 374px){
+    .sectionGreen1Title h3:nth-child(1){
+        margin: 0;
+        padding: 0;
+    }
+
+    .searchForCoursesContent p{
+        padding: 0;
+    }
+
+    .searchForCoursesContent p:before{
+    content:"";
+        display: none;
+    }
+
+    .sectionParagraph p{
+    padding: 0;
+    }
+}

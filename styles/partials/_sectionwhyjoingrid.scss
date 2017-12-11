@@ -1,0 +1,89 @@
+.sectionIconContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sectionIconColumnImage{
+    text-align: center;
+}
+
+.sectionIconColumn{
+    width: 20%;
+    padding-top: 40px;
+}
+
+.sectionIconColumnTitle h2{
+    @include sectionGridContent(2.2rem, 600, #333333);
+}
+
+.sectionIconColumnParagraph p{
+    @include sectionGridContent(1.6rem, 500, #808080);
+    line-height: 1.75;
+    padding-top: 30px;
+}
+
+// Media Queries
+@media only screen and (min-width : 1227px) and (max-width : 1469px){
+    width: 100%;
+}
+
+@media only screen and (max-width : 1469px){
+    .sectionIconColumn{
+        width: 21%;
+    }
+}
+
+@media only screen and (max-width : 1400px){
+    .sectionIconColumn{
+        width: 21.5%;
+    }
+}
+
+@media only screen and (max-width : 1369px){
+    .sectionIconColumn{
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width : 1337px){
+    .sectionIconColumn{
+        width: 22.5%;
+    }
+}
+
+@media only screen and (max-width : 1308px){
+    .sectionIconColumn{
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width : 1279px){
+    .sectionIconColumn{
+        width: 23.5%;
+    }
+}
+
+@media only screen and (max-width : 1253px){
+    .sectionIconColumn{
+        width: 24%;
+    }
+}
+
+@media only screen and (max-width : 1227px){
+    .sectionIconColumn{
+        width: 24.5%;
+    }
+}
+
+@media only screen and (max-width : 1202px){
+    .sectionIconColumn{
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width : 320px){
+    .sectionIconColumnTitle h2{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,167 @@
+/*62.5% font size*/ 
+html{
+    font-size: 62.5%;
+}
+
+/*Wrappers*/
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.wrapper2{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Grey Background*/
+.greyBackground{
+    background: #f7f7f7;
+}
+
+/*100% image width*/
+
+img{
+    max-width: 100%;
+}
+
+/*Font Styles*/
+$raleWay: 'Raleway', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+/*Font Colours*/
+$darkGrey: darkgrey; 
+$color1: #2ac5fb;
+$color2: #fe1d62;
+$color3: #b6d546;
+$color4: #3b9fb3;
+$color5: #0cad6b; 
+$color6: #714af2;
+$color7: #bf3761;
+$color8: #55ceb8;
+$color9: #aad020; 
+$color10: #fe1d62;
+$color11: #3b9fb3;
+$color12: #53c9eb;
+
+/*Hover Effects*/
+.nav li a, .navRight ul li a{
+    transition: color 1s;
+}
+
+.nav li a:hover, .navRight ul li a:hover{
+    color: white;
+}
+
+.sectionGreen1Subscribe h3, .greenSearch{
+    transition: 0.6s;
+}
+
+.sectionGreen1Subscribe h3:hover, .greenSearch:hover{
+    color: #59dac3;
+    background: white;
+    cursor: pointer;
+}
+
+.footer2 ul li a:hover{
+    color: $color12;
+}
+
+.footer3 ul li a:hover{
+    color: $color9;
+}
+
+.galleryColumn:hover{
+    background: rgba(237, 248, 246, 0.97);
+}
+
+/*Turqoise Text Links*/
+.turqoise a{
+    text-decoration: none;
+    color: #55ceb8;
+    font-family: $raleWay;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.turqoise{
+    padding-bottom: 50px;
+}
+
+.fa-angle-right{
+    padding-left: 5px;
+}
+
+/*Link Tags*/
+.middleFooterColumn ul li a{
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+/*Mixins*/
+@mixin headerText($fontSize){
+    font-size: $fontSize;
+    font-family: $raleWay;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.15);
+    color: $darkGrey;
+}
+
+@mixin sectionParagraph($fontSize){
+    font-size: $fontSize;
+    font-family: $raleWay;
+    font-weight: 500; 
+    line-height: 1.6;
+    color: #808080;
+    text-align: center;
+}
+
+@mixin sectionGridContent($fontSize, $fontWeight, $fontColor){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+    font-family: $raleWay;
+    text-align: center;
+}
+
+@mixin sectionGreenTitles($fontSize, $fontWeight){
+    font-family: $raleWay;
+    text-align: center;
+    color: #fffefe;
+    font-size: $fontSize;
+    font-weight: $fontWeight; 
+}
+
+/*Latest Courses Grid Mixin*/
+@mixin latestGridTitle($fontColor){
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $fontColor;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Aside Text*/
+@mixin asideTextTitle($fontColor){
+    font-family: $raleWay;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $fontColor;
+}
+
+/*Footer Text*/
+@mixin footerTitle($fontColor){
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: $raleWay;
+    color: $fontColor;
+    text-transform: uppercase;
+}
+
+.greyBackground, aside.wrapper2{
+    padding: 80px 0 80px 0;
+}
+
+.searchForCoursesContainer, .sectionGreen1{
+    padding: 50px 0px 50px 0px;
+}
